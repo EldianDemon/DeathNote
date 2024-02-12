@@ -1,0 +1,41 @@
+:root {
+  --padding: 20px;
+  --border_radius: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.App {
+  display: grid;
+  max-width: 82%;
+  margin: 0 auto;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 2fr 8fr;
+  grid-template-areas: 'h h' 'n b';
+  grid-gap: 10px;
+}
+
+.Header {
+  grid-area: h;
+  padding: var(--padding);
+  background-color: gray;
+  border-radius: var(--border_radius);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.Nav {
+  grid-area: n;
+  padding: var(--padding);
+  background-color: brown;
+  border-radius: var(--border_radius);
+}
+
+.Body {
+  grid-area: b;
+  padding: var(--padding);
+  background-color: bisque;
+  border-radius: var(--border_radius);
+}
